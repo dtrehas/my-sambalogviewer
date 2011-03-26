@@ -1,31 +1,31 @@
+package gui;
+
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package sambalog.gui;
+
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import org.eclipse.swt.*;
-import org.eclipse.swt.events.SelectionAdapter;
-import org.eclipse.swt.events.SelectionEvent;
+
+import main.dateiauslesen;
+
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
+import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Event;
-import org.eclipse.swt.widgets.List;
-import org.eclipse.swt.widgets.Shell;
-import org.eclipse.swt.widgets.Text;
-import org.eclipse.swt.layout.GridData;
-import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Label;
+import org.eclipse.swt.widgets.List;
 import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.ProgressBar;
-import sambalog.dateiauslesen;
-
+import org.eclipse.swt.widgets.Shell;
+import org.eclipse.swt.widgets.Text;
 /**
  *
  * @author stefan

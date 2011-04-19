@@ -9,7 +9,7 @@ package main;
 
 import java.io.File;
 import org.eclipse.swt.*;
-import sambalog.gui.Fenster1;
+import gui.Fenster1;
 
 /**
  *@version 1.1

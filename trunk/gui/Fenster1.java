@@ -67,7 +67,7 @@ public class Fenster1 {
         final Shell shell = new Shell(display);
 
         GridLayout gridlayout = new GridLayout(4, true);
-        shell.setText("SambalogViewer");
+        shell.setText("SambalogViewer V1");
         shell.setLayout(gridlayout);
         btnEnde = new Button(shell, SWT.PUSH);
         btnEnde.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, true, 1, 1));

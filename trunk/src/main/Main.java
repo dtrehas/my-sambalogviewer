@@ -17,6 +17,9 @@ import gui.Fenster1;
  */
 
 public class Main {
+	
+	
+	//huhu stefan und Mario
 
     /**
      * Main  startet die Dateisuche und läd das Ergebnis in das Fenster.

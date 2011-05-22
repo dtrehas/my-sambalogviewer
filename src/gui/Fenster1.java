@@ -23,6 +23,7 @@ import org.eclipse.swt.widgets.Event;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.List;
 import org.eclipse.swt.widgets.Listener;
+import org.eclipse.swt.widgets.MessageBox;
 import org.eclipse.swt.widgets.ProgressBar;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Text;
@@ -32,13 +33,14 @@ import org.eclipse.swt.widgets.Text;
  */
 public class Fenster1 {
 
-    private Button btnEnde;
+    private Button btnEnde, hallobtn;
     private List listedateien;
    public Text textfeld;
     private File[] dateinamen;
     private dateiauslesen bdaten;
     private BufferedReader breader;
    private ProgressBar anzeige;
+   private MessageBox mbox3fail;
 
     /**
      *Lädt die Dateinamen
@@ -81,6 +83,9 @@ public class Fenster1 {
             }
 
         });
+
+        
+        
         listedateien = new List(shell, SWT.SINGLE | SWT.V_SCROLL);
         listedateien.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, true, 1, 1));
 

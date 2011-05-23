@@ -40,7 +40,7 @@ public class Fenster1 {
     private dateiauslesen bdaten;
     private BufferedReader breader;
    private ProgressBar anzeige;
-   private MessageBox mbox3fail;
+   private MessageBox mbox3fail, jokebox1, jokebox2, jokebox3, jokebox4, jokebox5, jokebox6, jokebox7, jokebox8, jokebox9;
 
     /**
      *LÃ¤dt die Dateinamen
@@ -84,6 +84,73 @@ public class Fenster1 {
 
         });
 //hier kommt eine änderung
+        
+      //änderung by Patrick M. XD
+        hallobtn = new Button(shell, SWT.PUSH);
+        hallobtn.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, true, 1, 1));
+        hallobtn.setText("Eine Änderung");
+        hallobtn.addListener(SWT.Selection, new Listener() {
+			
+			@Override
+			public void handleEvent(Event event) {
+				
+				mbox3fail = new MessageBox(shell, SWT.OK| SWT.ICON_INFORMATION);
+				mbox3fail.setText("Ja es geht");
+				mbox3fail.setMessage("Hallo Hörsaal");
+				mbox3fail.open();
+				
+				if(mbox3fail != null)
+		        {
+		        	jokebox1 = new MessageBox(shell, SWT.OK | SWT.ICON_QUESTION);
+		        	jokebox1.setText("SCHADE");
+		        	jokebox1.setMessage("Willst du wirklich schließen?");
+		        	jokebox1.open();
+		        
+					jokebox2 = new MessageBox(shell, SWT.OK | SWT.ICON_WARNING);
+		        	jokebox2.setText("HAHA");
+		        	jokebox2.setMessage("Du hast das Zauberwort nicht gesagt");
+		        	jokebox2.open();
+				
+					jokebox3 = new MessageBox(shell, SWT.OK | SWT.ICON_INFORMATION);
+		        	jokebox3.setText(":-(");
+		        	jokebox3.setMessage("Ach bitte geh nicht");
+		        	jokebox3.open();
+				
+					jokebox4 = new MessageBox(shell, SWT.OK | SWT.ICON_WARNING);
+		        	jokebox4.setText("Willst du schluss machen");
+		        	jokebox4.setMessage("Drück ma weiter");
+		        	jokebox4.open();
+				
+					jokebox5 = new MessageBox(shell, SWT.OK | SWT.ICON_WORKING);
+		        	jokebox5.setText("HAHA");
+		        	jokebox5.setMessage("Klick mich");
+		        	jokebox5.open();
+				
+					jokebox6 = new MessageBox(shell, SWT.OK | SWT.ICON_WARNING);
+		        	jokebox6.setText("oO");
+		        	jokebox6.setMessage("Willst du im Hörsaal Fragen wie das geht");
+		        	jokebox6.open();
+				
+					jokebox7 = new MessageBox(shell, SWT.OK | SWT.ICON_WORKING);
+		        	jokebox7.setText("RTFM");
+		        	jokebox7.setMessage("Oder willst du die Proffs fragen");
+		        	jokebox7.open();
+		        	
+		        	jokebox8 = new MessageBox(shell, SWT.OK | SWT.ICON_INFORMATION);
+		        	jokebox8.setText("Mano");
+		        	jokebox8.setMessage("Na gut dann nicht");
+		        	jokebox8.open();
+		        	
+		        	jokebox9 = new MessageBox(shell, SWT.OK | SWT.ICON_CANCEL);
+		        	jokebox9.setText("CU GL HF");
+		        	jokebox9.setMessage("OK machmer Schluss. Klick mich");
+		        	jokebox9.open();
+				}
+				
+				
+			}
+			
+		});
         
         
         listedateien = new List(shell, SWT.SINGLE | SWT.V_SCROLL);

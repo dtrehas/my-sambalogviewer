@@ -1,0 +1,1 @@
+You can look at all your log files from your samba-server.
